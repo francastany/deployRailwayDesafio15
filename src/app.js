@@ -8,3 +8,7 @@ app.listen(PORT, () => console.log(`Listening in ${PORT}`));
 app.get('/', (req, res) => {
     res.send('Hola Railway App... =)')
 });
+
+app.get('/env', (req, res) => {
+    res.send(`Solicitado el entorno: ${process.env.PAPASCONQUESO}`)
+});
